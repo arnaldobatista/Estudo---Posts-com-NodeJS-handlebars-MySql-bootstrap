@@ -1,0 +1,10 @@
+<h1 class="text-center">Veja seus posts aqui</h1>
+<br>
+{{#each posts}}
+    <h1>{{titulo}}</h1>
+    <p>{{conteudo}}</p>
+    <small>{{createdAt}}</small>
+    <br>
+    <a href="/deletar/{{id}}"><button class="btn btn-primary" type="submit">Deletar</button></a>
+    <hr>
+{{/each}}
